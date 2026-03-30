@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-   base: process.env.VERCEL ? '/' : '/sturdy-inventio/',
+  base: process.env.VERCEL ? '/' : '/sturdy-invention/',
 })
