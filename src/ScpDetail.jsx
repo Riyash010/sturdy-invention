@@ -4,7 +4,8 @@ import { scpData } from './Home';
 
 function ScpDetail() {
   const { id } = useParams();
-  const scp = scpData[id];
+  const scpId = parseInt(id, 10);
+  const scp = scpData.find((entry) => entry.id === scpId);
 
   if (!scp) {
     return (
