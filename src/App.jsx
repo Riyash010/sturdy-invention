@@ -7,9 +7,9 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="App">
-        <Routes basename={import.meta.env.BASE_URL}>
+        <Routes>
           <Route path="/" element={<Home scpData={scpData} />} />
           <Route path="/scp/:id" element={<ScpDetail scpData={scpData} />} />
         </Routes>
