@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { scpData } from './Home';
 
-function ScpDetail({ scpData }) {
+function ScpDetail() {
   const { id } = useParams();
   const scp = scpData[id];
 

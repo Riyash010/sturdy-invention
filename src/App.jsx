@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import ScpDetail from './ScpDetail';
-import { scpData } from './scpData';
+import ScpDetail from './Home';
 import './App.css';
 
 function App() {
@@ -10,8 +9,8 @@ function App() {
     <Router basename={import.meta.env.BASE_URL}>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home scpData={scpData} />} />
-          <Route path="/scp/:id" element={<ScpDetail scpData={scpData} />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/scp/:id" element={<ScpDetail />} />
         </Routes>
       </div>
     </Router>
