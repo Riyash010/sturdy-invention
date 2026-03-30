@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
+        <Routes basename={import.meta.env.BASE_URL}>
           <Route path="/" element={<Home scpData={scpData} />} />
           <Route path="/scp/:id" element={<ScpDetail scpData={scpData} />} />
         </Routes>
